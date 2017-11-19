@@ -1,0 +1,42 @@
+<div class="container">
+    <h3>Transfer</h3>
+    <form #transferForm="ngForm" ngNativeValidate>
+        <div class="form-group">
+            <label for="recipient">Recipient</label>
+            <input type="text"
+                   class="form-control"
+                   id="recipient" #recipient required/>
+        </div>
+        <div class="form-group" hidden>
+            <label for="accountFake">Account</label>
+            <input type="text"
+                   class="form-control" value="11222222223333333333333333"
+                   id="accountFake" #accountFake/>
+        </div>
+        <div class="form-group">
+            <label for="account">Account</label>
+            <input type="text"
+                   class="form-control"
+                   id="account" #account required/>
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="text"
+                   class="form-control"
+                   id="amount" #amount required/>
+        </div>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text"
+                   class="form-control"
+                   id="title" #title required/>
+        </div>
+        <button type="submit" class="btn btn-success"
+                (click)=
+                        "send(recipient.value, account.value,
+                        amount.value, title.value);
+                        transferForm.reset();">
+            Submit
+        </button>
+    </form>
+</div>

@@ -8,7 +8,7 @@ import java.util.List;
 public class Parser {
 
     public static final String FILE_NAME
-            = "src/main/java/zad1/data";
+            = "/home/krzywus/workspace/Idea/BezpieczenstwoKomputerowe/Lista1/src/main/java/zad1/data";
 
     static void parseData(List<String[]> ciphers) {
         try {

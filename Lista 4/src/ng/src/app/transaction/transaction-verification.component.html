@@ -1,0 +1,27 @@
+<div class="container">
+    <h3>Transfer confirmation</h3>
+        <div>
+            <label>Recipient: </label>
+            <label>{{transfer.recipient}}</label>
+        </div>
+    <div>
+        <label>Account: </label>
+        <label>{{transfer.account}}</label>
+    </div>
+    <div>
+        <label>Amount: </label>
+        <label>{{transfer.amount}}</label>
+    </div>
+    <div>
+        <label>Title: </label>
+        <label>{{transfer.title}}</label>
+    </div>
+        <button type="submit" class="btn btn-success"
+                (click)="accept()">
+            Accept
+        </button>
+    <button type="submit" class="btn btn-success"
+            (click)="reject()">
+        Reject
+    </button>
+</div>

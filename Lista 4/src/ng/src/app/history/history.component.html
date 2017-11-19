@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <td>Title</td>
+                <td>Recipient</td>
+                <td>Amount</td>
+                <td>Account</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let transfer of transactions;">
+            <td>{{transfer.title}}</td>
+            <td>{{transfer.recipient}}</td>
+            <td>{{transfer.amount}}</td>
+            <td>{{transfer.account}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
